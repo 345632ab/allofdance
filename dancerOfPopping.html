@@ -1,0 +1,201 @@
+<html>
+<head>
+<style>
+#tab-demo{ width:600px; height:600px;}
+#tab-demo > ul{ display:block; margin:0;list-style:none;}
+.tab-title{list-style:none;}
+#tab-demo > ul > li{ display:inline-block; vertical-align:top;font-family:'微軟正黑體'; margin:0 -1px -1px 0 ; border:1px solid #BCBCBC; height:25px; line-height:25px; background:#cdcdcd;padding:0 15px;list-style:none; box-sizing:border-box;}
+#tab-demo >  ul > li a{ color:#000; text-decoration:none;}
+#tab-demo > ul > li.active{ border-bottom:1px solid #fff; background:#fff;}
+#tab-demo > .tab-inner{ clear:both; color:#000; border:1px #BCBCBC solid;}
+.tab-inner{ padding:15px; height:500px; width:700px;}  
+    </style>
+       </script>
+      <link href="css/style.css" rel="stylesheet">
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+       </link>
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.1.0/addons/bootstrap/jquery.smartmenus.bootstrap.min.css"
+              rel="stylesheet">
+       </link>
+       <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.1.0/jquery.smartmenus.min.js'></script>
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.1.0/addons/bootstrap/jquery.smartmenus.bootstrap.min.js'></script>
+<script>
+    $(function(){
+    var $li = $('ul.tab-title li');
+        $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+       $li.click(function(){
+            $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
+            $(this).addClass('active'). siblings ('.active').removeClass('active');
+        });
+    });
+    </script>
+    </head>
+
+<body>
+       <img src="1525089091_banner_1.jpg" style="width: 100% ; height:25%" >
+       <!--導覽列-->
+       <div class="navbar navbar-default" role="navigation">
+              <!--網站標題-->
+              <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                     </button>
+                     <a class="navbar-brand" href="home.html"><b style="font-size:30px">All Of Dance</b></a>
+              </div>
+              <!--網站標題-->
+
+              <!--下拉選單-->
+              <div class="navbar-collapse collapse navbar-right">
+                            <ul class="nav navbar-nav ">
+                                          <li><a href="#" style="font-size:20px">Breaking <span class="caret"></span></a>
+                                                 <ul class="dropdown-menu">
+                                                 <li><a href="StyleOfBreaking.html">舞風介紹</a>
+                                                 </li>
+                                                 <li><a href="HistoryOfBreaking.html">歷史淵源</a>
+                                                 </li>
+                                                 <li><a href="dancer.html">Famous dancer</a>
+                                                 </li>
+                                                 <li><a href="#">影片 <span class="caret"></span></a>
+                                                 <ul class="dropdown-menu">
+                                                        <li><a href="eduvideo.html">教學影片</a>
+                                                        </li>
+                                                 <li><a href="#">表演影片 <span class="caret"></span></a>
+                                                 <ul class="dropdown-menu">
+                                                        <li><a href="taiwanshowofbreaking.html">國內</a>
+                                                        </li>
+                                                        <li><a href="internationalshowofbreaking.html">國外</a>
+                                                        </li>
+                                                        </ul>
+                                                        </li>
+                                                        </ul>
+                                                        </li>
+                                                        <li><a href="compofbreaking.html">相關比賽</a>
+                                                        </li>
+                                                        </ul>
+                                                        </li>
+                                                 <!--Locking------------------------------------------------------------------------->
+                                                 <li><a href="#" style="font-size:20px">Locking<span class="caret"></span></a>
+                                                  <ul class="dropdown-menu">
+                                                         <li><a href="StyleOfLocking.html">舞風介紹</a>
+                                                         </li>
+                                                         <li><a href="HistoryOflocking.html">歷史淵源</a>
+                                                         </li>
+                                                         <li><a href="dancerOfLocking.html">Famous dancer</a>
+                                                         </li>
+                                                         <li><a href="#">影片 <span class="caret"></span></a>
+                                                         <ul class="dropdown-menu">
+                                                                <li><a href="eduvideoOfLocking.html">教學影片</a>
+                                                              </li>
+                                                         <li><a href="#">表演影片 <span class="caret"></span></a>
+                                                         <ul class="dropdown-menu">
+                                                                <li><a href="taiwanshowoflocking.html">國內</a>
+                                                                </li>
+                                                                <li><a href="internationalshowoflocking.html">國外</a>
+                                                                </li>
+                                                                </ul>
+                                                                </li>
+                                                                </ul>
+                                                                </li>
+                                                         <li><a href="compoflocking.html">相關比賽</a>
+                                                         </li>
+                                                         </ul>
+                                                         </li>
+                                                        <!--Popping------------------------------------------------------------------------->
+                                                        <li><a href="#" style="font-size:20px">Popping<span class="caret"></span></a>
+                                                          <ul class="dropdown-menu">
+                                                                 <li><a href="StyleOfPopping.html">舞風介紹</a>
+                                                                 </li>
+                                                                 <li><a href="HistoryOfPopping.html">歷史淵源</a>
+                                                                 </li>
+                                                                 <li><a href="dancerOfPopping.html">Famous dancer</a>
+                                                                 </li>
+                                                                 <li><a href="#">影片 <span class="caret"></span></a>
+                                                                 <ul class="dropdown-menu">
+                                                                 <li><a href="eduvideoOfPopping.html">教學影片</a>
+                                                                        </li>
+                                                                 <li><a href="#">表演影片 <span class="caret"></span></a>
+                                                                        <ul class="dropdown-menu">
+                                                                        <li><a href="taiwanshowofpopping.html">國內</a>
+                                                                        </li>
+                                                                        <li><a href="internationalshowofpopping.html">國外</a>
+                                                                        </li>
+                                                                        </ul>
+                                                                        </li>
+                                                                        </ul>
+                                                                        </li>
+                                                                 <li><a href="compofpopping.html">相關比賽</a>
+                                                                        </li>
+                                                                        </ul>
+                                                                        </li>
+                                                        <!--Hiphop------------------------------------------------------------------------->
+                                                       <li><a href="#" style="font-size:20px">Hiphop<span class="caret"></span></a>
+                                                          <ul class="dropdown-menu">
+                                                                 <li><a href="StyleOfHiphop.html">舞風介紹</a>
+                                                                 </li>
+                                                                 <li><a href="HistoryOfHiphop.html">歷史淵源</a>
+                                                                 </li>
+                                                                 <li><a href="dancerOfHiphop.html">Famous dancer</a>
+                                                                 </li>
+                                                                 <li><a href="#">影片 <span class="caret"></span></a>
+                                                                 <ul class="dropdown-menu">
+                                                                 <li><a href="eduvideoOfHiphop.html">教學影片</a>
+                                                                        </li>
+                                                                 <li><a href="#">表演影片 <span class="caret"></span></a>
+                                                                        <ul class="dropdown-menu">
+                                                                        <li><a href="taiwanshowofhiphop.html">國內</a>
+                                                                        </li>
+                                                                        <li><a href="internationalshowofhiphop.html">國外</a>
+                                                                        </li>
+                                                                        </ul>
+                                                                        </li>
+                                                                        </ul>
+                                                                        </li>
+                                                                 <li><a href="compofhiphop.html">相關比賽</a>
+                                                                        </li>
+                                                                        </ul>
+                                                                        </li>            
+                                                        </ul>
+                                                        </li>                                                                                     
+                            </ul>
+                            </div>
+             
+
+       </div>
+      <h1>World famous dancer</h1>
+      <div id="tab-demo">
+        <ul class="tab-title">
+            <li><a href="#tab01">POPIN PETE</a></li>
+            <li><a href="#tab02">HOAN</a></li>
+            <li><a href="#tab03">Popping Sam</a></li>
+        </ul>
+        <div id="tab01" class="tab-inner">
+               
+            <p>
+                    Timothy Earl Solomon (born August 5, 1961), known as Popin' Pete , is an American dancer, 
+                    choreographer, innovator, one of the originators of the "popping" dance style and member 
+                    of the Electric Boogaloos. Pete’s career has spanned over thirty years since the emerging 
+                    of popping dance to developing funk culture as a whole.</p>
+            <embed src="https://www.youtube.com/embed/_JFMEG8AUYY" allowfullscreen="true" width="425" height="344">
+        </div>
+        <div id="tab02" class="tab-inner">
+            <p>
+                    從2002年11月左右開始跳舞，起初跳的還不是popping，是韓國流行舞。後來通過看南賢俊的舞蹈視頻而了解到popping，
+                    開始喜歡並學習popping。 14歲時遇見了wave hyun（winners crew），向其學習了一段時間。通過wave hyun介紹，
+                    認識了poppin ds ，又師從poppin ds，加入winners。也經常去hozin，pop kun，poppin j，crazy kyo等課堂學習。
+                    在hozin課堂上結識了jaygee，發現jaygee的風格與自己的完全不一樣，在他身上可以學到自己所沒有的東西，於是成為朋友，
+                    經常在一起練習。後兩人組成mo‘ higher。</p>
+            <embed src="https://www.youtube.com/embed/7fCPGR1BEsk" allowfullscreen="true" width="425" height="344">
+        </div>
+        <div id="tab03" class="tab-inner">
+            <p>Popping Sam 施勇（Taiwan）
+                </p>
+                <embed src="https://www.youtube.com/embed/VpWUndwvypM" allowfullscreen="true" width="425" height="344">
+        </div>
+</body>
+
+</html>
